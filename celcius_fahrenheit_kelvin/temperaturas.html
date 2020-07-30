@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Temperatura (Celcius, Kelvin ou Fahrenheit)</title>
+        <link rel="stylesheet" href="temperaturas.css">
+    </head>
+    <body>
+
+        <div>
+
+            <h1>Insira os dados abaixo
+            </h1><br>
+
+            <section>
+                <input type="number" id="tempEntrada" placeholder="Insira a temperatura"><br>
+                <p>Escolha a conversão</p>
+                <select name="entrada" id="selectElement">
+                    <option value="Celcius para Kelvin">Celcius para Kelvin</option>
+                    <option value="Celcius para Fahrenheit">Celcius para Fahrenheit</option>
+                    <option value="Kelvin para Celcius">Kelvin para Celcius</option>
+                    <option value="Kelvin para Fahrenheit">Kelvin para Fahrenheit</option>
+                    <option value="Fahrenheit para Celcius">Fahrenheit para Celcius</option>
+                    <option value="Fahrenheit para Kelvin">Fahrenheit para Kelvin</option>
+                </select><br><br>
+
+                <input type="number" id="tempSaida" placeholder="Resultado" readonly="readonly"><br><br>
+                <button onclick="converterTemperatura()">Converter</button>
+                <button onclick="limparInputs()">Limpar dados</button>
+
+            </section>
+
+        </div>
+    </body>
+
+    <script src="temperaturas.js"></script>
+</html>

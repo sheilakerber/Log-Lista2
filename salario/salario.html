@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Salário</title>
+        <link rel="stylesheet" href="salario.css">
+    </head>
+    <body>
+        <div>
+            <h1>Consulte se seu salário está abaixo ou acima do piso</h1><br>
+            <h2>Salário anual que você recebe</h2>
+            <input placeholder="Ex: 10,000" type="number" id="salarioAnual"><br>
+
+            <h2>Piso salarial mensal da sua categoria</h2>
+            <input placeholder="Ex: 1,500" type="number" id="pisoSalarial"><br>
+            <br>
+            <button onclick="verificarPiso()">Verificar</button>
+            <button onclick="limparInputs()">Limpar dados</button>
+
+            <p id="resultado"></p>
+        </div>
+    </body>
+    <script src="salario.js"></script>
+</html>

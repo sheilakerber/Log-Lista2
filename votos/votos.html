@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Votos</title>
+        <link rel="stylesheet" href="votos.css">
+    </head>
+    <body>
+        <div>
+            <h1>Insira os dados abaixo para calcular a porcentagem de votos de uma eleição.
+            </h1><br>
+            <p style="color:red; font-size:12pt">** Obs: não use pontos ou vírgulas! **</p>
+
+            <h2>Número total de eleitores</h2>
+            <input type="number" id="numTotalEleitores">
+
+            <h2>Número de votos válidos</h2>
+            <input type="number" id="numTotalVotosValidos">
+
+            <h2>Número de votos brancos</h2>
+            <input style="font-size:16pt" type="number" id="numTotalVotosBrancos">
+
+            <h2>Número de votos nulos</h2>
+            <input type="number" id="numTotalVotosNulos">
+            <br><br>
+
+            <button onclick="calcular()">Calcular</button>
+            <p id="resultado"></p>
+
+        </div>
+    </body>
+    <script src="votos.js"></script>
+</html>
